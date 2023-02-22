@@ -22,9 +22,25 @@ public class SceneLoader : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("lvl") <= 10)
             SceneManager.LoadScene("Levels");
+        if (10 < PlayerPrefs.GetInt("lvl") && PlayerPrefs.GetInt("lvl") <= 20)
+            SceneManager.LoadScene("Levels3");
+        if (20 < PlayerPrefs.GetInt("lvl") && PlayerPrefs.GetInt("lvl") <= 30)
+            SceneManager.LoadScene("Levels2");
+
     }
     public void LoadMenu()
     {
         SceneManager.LoadScene("Main");
+    }
+
+
+    public void Pause()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void Resume()
+    {
+        Time.timeScale = 1;
     }
 }

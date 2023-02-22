@@ -49,7 +49,7 @@ PrefabInstance:
     - target: {fileID: 6978395012059334005, guid: 6a800cd3a6901fc41ad9ae0cb1569493,
         type: 3}
       propertyPath: m_Name
-      value: box_tree (1)
+      value: box_tree_1
       objectReference: {fileID: 0}
     - target: {fileID: 7751800959199076303, guid: 6a800cd3a6901fc41ad9ae0cb1569493,
         type: 3}
@@ -284,7 +284,7 @@ PrefabInstance:
     - target: {fileID: 6978395012059334005, guid: 6a800cd3a6901fc41ad9ae0cb1569493,
         type: 3}
       propertyPath: m_Name
-      value: box_tree (2)
+      value: box_tree_2
       objectReference: {fileID: 0}
     - target: {fileID: 7751800959199076303, guid: 6a800cd3a6901fc41ad9ae0cb1569493,
         type: 3}
@@ -444,7 +444,7 @@ PrefabInstance:
     - target: {fileID: 6978395012059334005, guid: 6a800cd3a6901fc41ad9ae0cb1569493,
         type: 3}
       propertyPath: m_Name
-      value: box_tree (3)
+      value: box_tree_3
       objectReference: {fileID: 0}
     - target: {fileID: 7751800959199076303, guid: 6a800cd3a6901fc41ad9ae0cb1569493,
         type: 3}
@@ -649,7 +649,7 @@ PrefabInstance:
     - target: {fileID: 5557844549085463001, guid: 3165c1e37b018ef4fae7daf895cd5197,
         type: 3}
       propertyPath: m_Name
-      value: wood_1 (1)
+      value: wood_1
       objectReference: {fileID: 0}
     - target: {fileID: 5627963196983339579, guid: 3165c1e37b018ef4fae7daf895cd5197,
         type: 3}

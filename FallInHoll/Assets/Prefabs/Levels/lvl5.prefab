@@ -500,7 +500,7 @@ PrefabInstance:
     - target: {fileID: 4004531289495316563, guid: 01f6bb269dd7f1d48b521efdd5d87d91,
         type: 3}
       propertyPath: m_Name
-      value: wood_3
+      value: wood_3_2
       objectReference: {fileID: 0}
     - target: {fileID: 4384574543843193577, guid: 01f6bb269dd7f1d48b521efdd5d87d91,
         type: 3}

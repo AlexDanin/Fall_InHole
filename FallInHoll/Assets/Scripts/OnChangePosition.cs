@@ -12,22 +12,69 @@ public class OnChangePosition : MonoBehaviour
     public float initialScale = 0.5f;
     Mesh GeneratedMesh;
 
+    Vector3 touch;
+    float x, z;
+    bool change = true;
+
     public void Move(BaseEventData myEvent)
     {
         if (((PointerEventData)myEvent).pointerCurrentRaycast.isValid)
         {
-            transform.position = ((PointerEventData)myEvent).pointerCurrentRaycast.worldPosition;
+            if (PlayerPrefs.GetInt("move") == 1)
+            {
+                touch = ((PointerEventData)myEvent).pointerCurrentRaycast.worldPosition;
+                if (change)
+                {
+                    x = Mathf.Abs(transform.position.x - touch.x);
+                    z = Mathf.Abs(transform.position.z - touch.z);
+                    change = false;
+                }
+
+                if (touch.x > transform.position.x)
+                {
+                    if (touch.z > transform.position.z)
+                    {
+                        transform.position = new Vector3(touch.x - x, 0f, touch.z - z);
+                    }
+                    else
+                    {
+                        transform.position = new Vector3(touch.x - x, 0f, touch.z + z);
+                    }
+                }
+                else
+                {
+                    if (touch.z > transform.position.z)
+                    {
+                        transform.position = new Vector3(touch.x + x, 0f, touch.z - z);
+                    }
+                    else
+                    {
+                        transform.position = new Vector3(touch.x + x, 0f, touch.z + z);
+                    }
+                }
+            }
+            else
+            {
+                transform.position = ((PointerEventData)myEvent).pointerCurrentRaycast.worldPosition;
+            }
+                
+            
             hole2DCollider.transform.position = ((PointerEventData)myEvent).pointerCurrentRaycast.worldPosition;
         }
+    }
+
+    public void UnTouch()
+    {
+        change = true;
     }
 
     public IEnumerator ScaleHole()
     {
         Vector3 startScale = transform.localScale;
-        Vector3 endScale = startScale * 2;
+        Vector3 endScale = startScale * 1.5f;
 
         float t = 0;
-        while (t <= 0.2f)
+        while (t <= 0.4f)
         {
             t += Time.deltaTime;
             transform.localScale = Vector3.Lerp(startScale, endScale, t);
