@@ -26,10 +26,12 @@ public class SceneLoader : MonoBehaviour
             SceneManager.LoadScene("Levels3");
         if (20 < PlayerPrefs.GetInt("lvl") && PlayerPrefs.GetInt("lvl") <= 30)
             SceneManager.LoadScene("Levels2");
+        Time.timeScale = 1;
 
     }
     public void LoadMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Main");
     }
 

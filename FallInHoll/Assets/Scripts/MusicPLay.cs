@@ -16,15 +16,24 @@ public class MusicPLay : MonoBehaviour
             lvlsoundGO = Instantiate(lvlsound);
             lvlsoundGO.name = "Music";
         }
-        DontDestroyOnLoad(lvlsoundGO);
+        DontDestroyOnLoad(GameObject.Find("Music"));
+
+        if (PlayerPrefs.GetInt("music") == 1)
+        {
+            GameObject.Find("Music").GetComponent<AudioSource>().enabled = true;
+        }
+        else
+        {
+            GameObject.Find("Music").GetComponent<AudioSource>().enabled = false;
+        }
     }
 
     public void OnMusic()
     {
-        lvlsoundGO.GetComponent<AudioSource>().enabled = true;
+        GameObject.Find("Music").GetComponent<AudioSource>().enabled = true;
     }
     public void OffMusic()
     {
-        lvlsoundGO.GetComponent<AudioSource>().enabled = false;
+        GameObject.Find("Music").GetComponent<AudioSource>().enabled = false;
     }
 }

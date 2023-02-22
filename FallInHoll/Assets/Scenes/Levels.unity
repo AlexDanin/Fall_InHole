@@ -244,6 +244,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -366,7 +367,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 299799723}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: YandexSDK, Assembly-CSharp
         m_MethodName: ShowInterstitial
         m_Mode: 1
@@ -701,7 +702,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 299799723}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: YandexSDK, Assembly-CSharp
         m_MethodName: ShowInterstitial
         m_Mode: 1
@@ -813,50 +814,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &299799722
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 299799724}
-  - component: {fileID: 299799723}
-  m_Layer: 0
-  m_Name: YandexSDK
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &299799723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299799722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f58170104fda1e44b2ef2c8f810b50d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &299799724
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299799722}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.212378, y: -1.3715014, z: 0.20838332}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &487501152
 GameObject:
@@ -1159,7 +1116,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 299799723}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: YandexSDK, Assembly-CSharp
         m_MethodName: ShowInterstitial
         m_Mode: 1
@@ -1676,7 +1633,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 299799723}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: YandexSDK, Assembly-CSharp
         m_MethodName: ShowInterstitial
         m_Mode: 1
@@ -2312,7 +2269,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 299799723}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: YandexSDK, Assembly-CSharp
         m_MethodName: ShowInterstitial
         m_Mode: 1
@@ -2626,6 +2583,7 @@ PolygonCollider2D:
       - {x: -10, y: 7.5}
       - {x: 10, y: 7.5}
       - {x: 10, y: -7.5}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1749811686
 GameObject:
   m_ObjectHideFlags: 0
@@ -2893,7 +2851,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 299799723}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: YandexSDK, Assembly-CSharp
         m_MethodName: ShowInterstitial
         m_Mode: 1
@@ -3028,7 +2986,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -3143,6 +3100,7 @@ PolygonCollider2D:
       - {x: 0.9633056, y: -0.4056651}
       - {x: 1.0072131, y: -0.069770575}
       - {x: 0.9510565, y: 0.30901712}
+  m_UseDelaunayMesh: 0
 --- !u!1 &2092359835
 GameObject:
   m_ObjectHideFlags: 0
